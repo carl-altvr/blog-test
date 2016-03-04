@@ -41,5 +41,13 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
 end
 
+# Enable stuff like static asset serving and logging for Heroku
+gem 'rails_12factor', group: :production
+
+ruby "2.1.2"
+
+# A more robust webserver than the default Webrick
+gem 'puma'
